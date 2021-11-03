@@ -1,0 +1,87 @@
+Crear un ambiente 
+python -m venv "nombre del ambiente"
+
+Activar el Ambiente para poder descargar cosas
+source/"nombredelambiente"/Scripts/activate
+
+
+Iniciar un proyecto en django:
+django-admin startproject (website)
+
+
+Te tienes que meter en la terminal en la carpeta
+cd website/
+
+Crear una base de datos adentro de la carpeta 
+python manage.py migrate
+
+Ejecutar el Servidor
+python manage.py runserver
+
+Crear un usuario
+python manage.py createsuperuser o  winpty python manage.py createsuperuser
+
+Te pidira:
+Nombre de usuario DanielRojas2002
+correo
+contraseña  admin2002
+
+
+Para crear aplicaciones integradas seria:
+python manage.py startapp "nombredelaapp"
+
+Despues tienes que integrarlo al setting del "main"
+INSTALLED_APPS = [
+    'productos.apps.ProductosConfig'
+    ]
+
+Crear Modelo de datos {
+    class Producto (models.Model):
+        descripcion=models.CharField(max_length=50)
+        presentacion=models.CharField(max_length=50)
+        precio=models.FloatField()
+
+    Aqui creas tus campos en una tabla ver documentacion
+    https://docs.djangoproject.com/en/3.2/
+}
+
+Despues tienes que registrar tu modelo en admin
+
+Y despues you have to execute this command in your bash
+cuando hagas un cambio en la base de datos cuando creas una nueva tabla o hagas una implementacion 
+tienes que utilizar este comando
+
+        
+modelo ->makemigrations                     ->migrate
+ya      python manage.py makemigrations       python manage.py migrate
+
+
+---------------------------
+ORM 
+Clases mapeadoras de tablas 
+
+python manage.py shell   (python con sql)
+
+from productos.models import Producto  "Aqui accedes a la tabla Producto"
+>>> Producto.objects.values()           "Aqui checas si esa tabla tiene registros y te los devuelve"
+<QuerySet [{'id': 1, 'descripcion': 'Galletas', 'presentacion': '100gr', 'precio': 50.0}]>
+
+Crear un nuevo registro desde el shell seria:
+
+nuevoproducto=Producto(descripcion="Harina",presentacion="500 gr",precio=100)
+nuevoproducto.save() "para guardarlo en la bd"
+
+Para hacer selects=
+Producto.objects.filter(presentacion="500 gr").values()
+
+
+Modificar 
+Producto.objects.filter(id=1).update(descripcion="Manteca")
+
+Eliminar
+Producto.objects.filter(id=2).delete() 
+
+
+
+
+
