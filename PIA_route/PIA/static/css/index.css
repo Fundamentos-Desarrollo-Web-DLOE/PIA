@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 body{
@@ -9,15 +8,10 @@ body{
     grid-template-areas: "header"
     "main"
     "footer";
-    background:#000;
+    background-color: yellow;
 }
 
 .header{
-    background-image: url("../recursos/head-index.png");
-    
-    background-repeat: no-repeat;
-    
-
     grid-area: header;
 }
 
@@ -42,24 +36,6 @@ footer{
     flex-direction: column;
     justify-content: center;
 }
-
-.flex div{
-    width: 300px;
-    height: 500px;
-   
-}
-.img-flex{
-    height: 200px;
-    width: 80%;
-    margin-top: 20px; 
-}
-
-.contenedor-img{
-    display: flex;
-    height: 200px;
-    justify-content: center;
-
-}
 .flex-1{
     display: flex;
     flex-direction: column;
@@ -68,6 +44,42 @@ footer{
     border-radius: 50px;
     margin-bottom: 20px;
 }
+
+
+/* .img-flex{
+    height: 100px;
+    width: 40%;
+    margin-top: 20px; 
+} */
+
+.contenedor-img{
+    display: flex;
+    height: 40px;
+    justify-content: center;
+
+}
+.contenedor-img img{
+    height: 20px;
+    width: 20px;
+}
+
+img{
+    height: 30px;
+    width: 30px;
+    background-color: yellow;
+}
+
+.contenedor-img-header{
+    width: 100vw;
+    height: 100vh;
+}
+
+.contenedor-img-header img{
+    height: 100%;
+    width: 100%;
+
+}
+
 
 h3{
     color: #000;
@@ -97,7 +109,7 @@ a{
 }
 
 a:hover{
-    background: #000;
+    /* background: #000; */
     color: #fff;
 
 }
@@ -109,7 +121,7 @@ a:hover{
 
 .footer {
     background: #fff;
-    color: #000;
+    /* color: #000; */
     text-align: center;
     padding: 10px;
     border-radius: 20px;
@@ -124,7 +136,6 @@ a:hover{
         grid-template-areas: "header"
         "main"
         "footer";
-        background:#000;
     }
 
     .flex{
@@ -140,12 +151,7 @@ a:hover{
     }
 
     .header{
-        background-image: url("../recursos/head-index.png");
-        width: 100%;
-        height: 450px;
-        background-repeat: no-repeat;
         
-        background-size: cover;
         grid-area: header;
     }
 

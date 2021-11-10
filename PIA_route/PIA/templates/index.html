@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pia 5 Semestre web"/>
-
+    <link rel="shortcut icon" href="{% static 'img/icono.png' %}">
     <meta name="copyright" content="MEXICAN SOFT" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,19 +18,23 @@
 </head>
 <body>
     <header class="header">
-        <h1>GYM</h1>
+        <div class="contenedor-img-header">
+            <img src="{% static 'img/fondo.jpg' %}" alt="">
+        </div>
+
+        <h1>MEXICAN SOFT</h1>
     </header>
 
     <main >
         <div class="flex">
             <div class="flex-1">
                 <div class="contenedor-img">
-                    <img src="../Evidencia-2/recursos/local-index.png"  class="img-flex"  alt="">
+                    <img src="{% static 'img/proyecto.PNG' %}" alt="">
                 </div>
 
                 <div class="contenido-flex">
-                    <h3>SUCURSALES</h3>
-                    <p>En este apartado podras conocer en donde se encuentran nuestras Sucursales.</p>
+                    <h3>PROYECTOS</h3>
+                    <p>En este apartado se muestran todos nuestros Proyectos </p>
                     
                 </div>
 
@@ -44,12 +48,12 @@
 
             <div class="flex-1">
                 <div class="contenedor-img">
-                    <img src="../Evidencia-2/recursos/servicios-index.png"  class="img-flex"  alt="">
+                    <img src="{% static 'img/cliente2.png' %}" alt="">
                 </div>
 
                 <div class="contenido-flex">
-                    <h3>SERVICIOS</h3>
-                    <p>En este aparatado podras conocer los diferentes servicios que brindamos.</p>
+                    <h3>CLIENTES</h3>
+                    <p>En este aparatado podras encontrar nuestros mejores Clientes</p>
                     
                 </div>
 
@@ -61,12 +65,12 @@
 
             <div class="flex-1">
                 <div class="contenedor-img">
-                    <img src="../Evidencia-2/recursos/rutinas-index.png"  class="img-flex"  alt="">
+                    <img src="{% static 'img/empleado.png' %}" alt="">
                 </div>
 
                 <div class="contenido-flex">
-                    <h3>RUTINAS</h3>
-                    <p>En este aparatos podras encontrar las mejores rutinas hechas por nuestros instructores.</p>
+                    <h3>EMPLEADOS</h3>
+                    <p>En este aparatos podras conocer la lista de nuestros Empleados</p>
   
                 </div>
 
@@ -81,12 +85,12 @@
 
             <div class="flex-1">
                 <div class="contenedor-img">
-                    <img src="../Evidencia-2/recursos/contacto.png"  class="img-flex"  alt="">
+                   <img src="{% static 'img/sucursales.PNG' %}" alt="">
                 </div>
 
                 <div class="contenido-flex">
-                    <h3>CONTACTO</h3>
-                    <p>En este apartado podras contactarnos para poder brindarte un mejor servicio.</p>
+                    <h3>SUCURSALES</h3>
+                    <p>En este apartado podras conoces la ubicacion de nuestras Sucursales</p>
                     
                 </div>
 

@@ -1,3 +1,19 @@
 :root{
-    
+    --celeste:#88E0EF;
+    --azul:#161E54;
+    --salmon:#FF5151;
+    --naranja:#FF9B6A;
+}
+
+h1,h2{
+    font-family: 'Playfair Display SC', serif
+}
+
+h3,h4,h5,h6{
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+p{
+    font-family: 'Josefin Sans', sans-serif;
+
 }
