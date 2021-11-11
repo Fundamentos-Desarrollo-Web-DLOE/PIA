@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pia 5 Semestre web"/>
-    <link rel="shortcut icon" href="{% static 'img/icono.png' %}">
-    <meta name="copyright" content="MEXICAN SOFT" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    {% comment %} <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet"> {% endcomment %}
 
-  
-    <link rel="stylesheet" href="{% static 'css/utilidad.css' %}">
-    <link rel="stylesheet" href="{% static 'css/proyecto.css' %}">
-    <title>Proyecto</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pia 5 Semestre web" />
+  <link rel="shortcut icon" href="{% static 'img/icono.png' %}">
+  <meta name="copyright" content="MEXICAN SOFT" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  {% comment %}
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet"> {% endcomment %}
+
+
+  <link rel="stylesheet" href="{% static 'css/utilidad.css' %}">
+  <link rel="stylesheet" href="{% static 'css/proyecto.css' %}">
+  <title>Proyecto</title>
 </head>
+
 <body>
-<div class="titulo">
+  <div class="titulo">
     <div class="header_nav">
       <div class="container">
-          <h1> <img src="{% static 'img/icono.png' %}" alt="">  MEXICAN SOFT <span>Proyecto</span></h1> 
+        <h1> <img src="{% static 'img/icono.png' %}" alt=""> MEXICAN SOFT <span>Proyecto</span></h1>
       </div>
     </div>
   </div>
@@ -44,7 +47,7 @@
             <li>Cliente</li>
           </div>
         </a>
-        
+
 
         <a href="{% url 'empleado' %}">
           <div class="contenedor-nav">
@@ -73,13 +76,34 @@
     </nav>
   </header>
 
-    <main>
-    <p>PROYECTO</p>
+  <main>
+    <div class="contenedor-main">
+      <div class="main-izq">
+        <div class="contendor">
+          <div class="contenedor-img">
+            <img src="{% static 'img/empleado.png' %}" alt="">
+          </div>
+          <div class="contenedor-txt">
+            <h1>DJANGO</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusamus iste obcaecati laudantium quas ducimus provident facere illum beatae dicta.</p>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="main-der">
+        <p>derecha</p>
+      </div>
+    </div>
+
+   
+
   </main>
 
   <footer>
     <img src="{% static 'img/footer2.png' %}" alt="">
   </footer>
-    
+
 </body>
+
 </html>
