@@ -48,6 +48,8 @@ header{
 
 main{
     grid-area: main;
+    display: flex;
+    justify-content: center;
 }
 footer{
     grid-area: pie;
@@ -154,45 +156,25 @@ a{
     margin-bottom: 10px;
 }
 
-.contenedor-main{
-    display: flex;
-    flex-direction: column;   
-    align-items: center; 
-}
 
-.contenedor-1{
-    background:#BFB2E6;
+
+
+.tabla th{
+    margin: 20px;
+    padding: 10px;
+    background-color: #000;
+}
+.tabla{
     border: 2px solid #000;
-    margin-top:50px;
-    height:400px;
-    width:300px;
-    margin-bottom: 50px;
-    
+    background-color: #000;
+    padding: 20px;
 }
 
-.contenedor-img iframe{
-    margin:0;
-    height:200px;
-    width:100%;
-    
-}
 
-.contenedor-texto{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: auto;
-    height: 150px;
-    text-align: center;
-    
+tr{
+    padding: 20px;
+    margin: 20px;
 }
-
-.contenedor-texto p{
-    margin-top:10px;
-    margin-bottom:20px;
-}
-
 
 
 span{
@@ -202,35 +184,8 @@ span{
 
 @media only screen and (min-width: 1000px){
     
-    .contenedor{
-        display: grid;
-        grid-template-areas: 
-        "header header header2";
-        height: 50px;
-        background:#A08DD8;
-    }
-
-    .contenedor-left{
-        grid-area: header;
-        display:flex;
-        flex-direction: row;
-    }
-
-    .contenedor-left p{
-        margin-left: 20px;
-        margin-top:20px;
-        color:#fff;
-        font-size: 15px;
-    }
-
-
-    .contenedor-right ul{
-        grid-area: header2;
-        margin-top: 15px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+   
+    
 
     li{
         list-style: none;
@@ -253,42 +208,8 @@ span{
 
 
 
-    .contenedor-main{
-        display: flex;
-        flex-direction: row;
-        justify-content:space-around;
-        
-        
-        
-    }
 
-    .contenedor-1{
-        background:#BFB2E6;
-        border: 2px solid #000;
-        margin-top:50px;
-        height:400px;
-        width:300px;
-        margin-bottom: 50px;
-        
-    }
-
-  
-
-    .contenedor-texto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-
-  
-
-    .contenedor-texto a{
-        padding:10px;
-        border: 2px solid #fff;
-        border-radius: 10px;
-        
-    }
+    
 
 
 }
