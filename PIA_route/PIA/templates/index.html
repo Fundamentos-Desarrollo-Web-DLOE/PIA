@@ -21,7 +21,7 @@
         <div class="header_nav">
             <div class="container">
                 <!-- encabezado -->
-                <h1> <img src="{% static 'img/icono.png' %}" alt=""> SOFTWARE MEXIC</h1>
+                <h1> <img src="{% static 'img/icono.png' %}" alt="">  MEXICAN SOFT</h1>
                 
             </div>
         </div>
@@ -33,28 +33,30 @@
             <div class="banner_flex">
                 <div class="contenedor-img-0 mov1">
                     <a href="#">
-                        <img src="{% static 'img/empleado.png' %}" alt="">
+                        <img src="{% static 'img/facebook.png' %}" alt="">
                     </a>
                     
                 </div>
                 <div class="contenedor-img-0 mov1">
                     <a href="#">
-                        <img src="{% static 'img/empleado.png' %}" alt="">
+                        <img src="{% static 'img/instagram.png' %}" alt="">
                     </a>
                    
                 </div>
                 <div class="contenedor-img-0 mov1">
                     <a href="#">
-                        <img src="{% static 'img/empleado.png' %}" alt="">
+                        <img src="{% static 'img/twitter.png' %}" alt="">
                     </a>
                     
                 </div>
+
                 <div class="contenedor-img-0 mov1">
                     <a href="#">
-                        <img src="{% static 'img/empleado.png' %}" alt="">
+                        <img src="{% static 'img/github2.png' %}" alt="">
                     </a>
                     
                 </div>
+                
         
             </div>
         </div>
@@ -110,12 +112,13 @@
                     </a>
                   
                 </div>
+                
         
             
             
                 <div class="contenedor-img">
                     <img src="{% static 'img/Sucursal.PNG' %}" alt="">
-                    <a href="sucursales">
+                    <a href="{% url 'sucursales' %}">
                         <div class="targeta1_titulo">
                             <h3>SUCURSALES</h3>
                         </div>

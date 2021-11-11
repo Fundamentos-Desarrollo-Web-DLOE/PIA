@@ -1,9 +1,20 @@
+:root{
+    --celeste:#88E0EF;
+    --celeste2:#CEE5D0;
+    --azul:#161E54;
+    --salmon:#FF5151;
+    --naranja:#FF9B6A;
+    --azulfuerte:#161E54;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-color: var(--celeste2);
+}
 .banner_container{
     display: grid;
     grid-template-areas: "foto" "titulo" ;
@@ -64,7 +75,7 @@ main{
 .header_nav h1{
     line-height: 50px;
     color: #000;
-    font-family: sans-serif;
+
 }
 
 .header_nav img{
@@ -95,6 +106,7 @@ main{
 .banner_img img{
     width: 500px;
     display: block;
+    border-radius: 30px;
 }
 
 .targeta1{
@@ -124,7 +136,7 @@ main{
 .contenedor-img-0 img{
     height: 100%;
     width: 100%;
-    margin: auto;
+    
 }
 
 .contenedor-img {
@@ -132,8 +144,8 @@ main{
     flex-direction: column;
     align-content: center;
     padding: 20px;
-    height: 600px;
-    width: 100%;
+    height: 300px;
+    width: 80%;
     margin: 10px;
 }
 .contenedor-img img{
@@ -152,14 +164,12 @@ main{
 a{
     text-decoration: none;
 }
-
-
-
-.contenedor-img img{
-    height: 100%;
-    width: 100%;
-    
+.contenedor-img a:hover{
+    background: #8CA1A5;
 }
+
+
+
 
 
 
@@ -172,7 +182,7 @@ a{
     body{
         display: grid;
         grid-template-areas: "op1" "op2" "op3";
-        background:var(--colorprincipal);
+        background:var(--celeste2);
     }
 
     .banner_flex{
@@ -193,11 +203,13 @@ a{
         height: 200px;
         width: 100%;
         margin: 10px;
+        background-color: var(--celeste2);
     }
 
     .contenedor-img img{
         height: 100%;
-        width: 100%;
+        width: 50%;
+        background-color: var(--celeste2);
         
     }
     .banner_tittle{

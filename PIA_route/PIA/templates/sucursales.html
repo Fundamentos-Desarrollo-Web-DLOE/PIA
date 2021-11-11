@@ -1,22 +1,128 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pia 5 Semestre web"/>
-    <link rel="shortcut icon" href="{% static 'img/icono.png' %}">
-    <meta name="copyright" content="MEXICAN SOFT" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pia 5 Semestre web" />
+  <link rel="shortcut icon" href="{% static 'img/icono.png' %}">
+  <meta name="copyright" content="MEXICAN SOFT" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  {% comment %}
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet"> {% endcomment %}
 
-    
-    <link rel="stylesheet" href="{% static 'css/utilidad.css' %}">
-    <title>Sucursales</title>
+
+  <link rel="stylesheet" href="{% static 'css/utilidad.css' %}">
+  <link rel="stylesheet" href="{% static 'css/sucursales.css' %}">
+  <title>Sucursales</title>
 </head>
+
 <body>
-    
+
+  <div class="titulo">
+    <div class="header_nav">
+      <div class="container">
+          <h1> <img src="{% static 'img/icono.png' %}" alt="">  MEXICAN SOFT <span>Sucursales</span></h1> 
+      </div>
+    </div>
+  </div>
+  <header>
+    <nav>
+      <ul>
+        <a href="{% url 'index' %}">
+          <div class="contenedor-nav">
+            <div class="contenedor-img">
+              <img src="{% static 'img/inicio.png' %}" alt="">
+            </div>
+            <li>Inicio</li>
+          </div>
+        </a>
+        <a href="{% url 'proyecto' %}">
+          <div class="contenedor-nav">
+            <div class="contenedor-img">
+              <img src="{% static 'img/proyecto2.png' %}" alt="">
+            </div>
+            <li>Proyecto</li>
+          </div>
+        </a>
+        <a href="{% url 'cliente' %}">
+          <div class="contenedor-nav">
+            <div class="contenedor-img">
+              <img src="{% static 'img/cliente.png' %}" alt="">
+            </div>
+            <li>Clientes</li>
+          </div>
+        </a>
+
+        <a href="{% url 'empleado' %}">
+          <div class="contenedor-nav">
+            <div class="contenedor-img">
+              <img src="{% static 'img/empleado2.png' %}" alt="">
+            </div>
+            <li>Empleados</li>
+          </div>
+        </a>
+
+
+
+
+
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contenedor-main">
+      <div class="contenedor-1">
+
+        <div class="contenedor-img">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.3617733023584!2d-100.27718868564286!3d25.62611592045495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bf060c446447%3A0xfacdabf372954c90!2sH-E-B%20Contry!5e0!3m2!1ses-419!2smx!4v1633471417916!5m2!1ses-419!2smx"   allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contenedor-texto">
+          <h2> Apodaca</h2>
+          <p>Direccion: Calle Chile 335, Apodaca, Nuevo León </p>
+          <p>Colonia: Nuevo Amancer</p>
+          <p>CP:66645</p>
+          <p>Telefono: 8135678456</p>
+        
+        </div>
+      </div>
+      <div class="contenedor-1">
+        <div class="contenedor-img">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.3617733023584!2d-100.27718868564286!3d25.62611592045495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bf060c446447%3A0xfacdabf372954c90!2sH-E-B%20Contry!5e0!3m2!1ses-419!2smx!4v1633471417916!5m2!1ses-419!2smx"   allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contenedor-texto">
+          <h2>San Pedro Garza Garcia</h2>
+          <p>Direccion: Av. Corregidora 427, Casco Urbano, San Pedro Garza García, N.L.</p>
+          <p>Colonia:Los pinos</p>
+          <p>CP:66230</p>
+          <p>Telefono:81136-55262</p>
+
+        
+        </div>
+      </div>
+      <div class="contenedor-1">
+        <div class="contenedor-img">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.3617733023584!2d-100.27718868564286!3d25.62611592045495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bf060c446447%3A0xfacdabf372954c90!2sH-E-B%20Contry!5e0!3m2!1ses-419!2smx!4v1633471417916!5m2!1ses-419!2smx"   allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contenedor-texto">
+          <h2> Guadalupe </h2>
+          <p> Direccion:Juárez No. 100 General Escobedo, Nuevo León.</p>
+          <p> Colonia: Centro</p>
+          <p> CP:66678</p>
+          <p>Telefono:813765464</p>
+        </div>
+      </div>
+
+  </main>
+
+  <footer>
+    <img src="{% static 'img/footer2.png' %}" alt="">
+  </footer>
 </body>
+
 </html>
