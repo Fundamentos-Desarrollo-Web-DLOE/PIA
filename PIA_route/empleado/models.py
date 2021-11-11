@@ -9,4 +9,4 @@ class Empleado (models.Model):
 
 
     def __str__(self):
-        return self.nombre
+        return str(self.matricula)+"-"+self.nombre
