@@ -10,12 +10,68 @@
     <meta name="copyright" content="MEXICAN SOFT" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    {% comment %} <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet"> {% endcomment %}
 
     <link rel="stylesheet" href="{% static 'css/utilidad.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cliente.css' %}">
     <title>Cliente</title>
 </head>
 <body>
+
+<div class="titulo">
+    <div class="header_nav">
+      <div class="container">
+          <h1> <img src="{% static 'img/icono.png' %}" alt="">  MEXICAN SOFT <span>Clientes</span></h1> 
+      </div>
+    </div>
+  </div>
+  <header>
+    <nav>
+      <ul>
+        <a href="{% url 'index' %}">
+          <div class="contenedor-nav">
+            <div class="contenedor-img">
+              <img src="{% static 'img/inicio.png' %}" alt="">
+            </div>
+            <li>Inicio</li>
+          </div>
+        </a>
+        <a href="{% url 'proyecto' %}">
+          <div class="contenedor-nav">
+            <div class="contenedor-img">
+              <img src="{% static 'img/proyecto2.png' %}" alt="">
+            </div>
+            <li>Proyecto</li>
+          </div>
+        </a>
+        
+
+        <a href="{% url 'empleado' %}">
+          <div class="contenedor-nav">
+            <div class="contenedor-img">
+              <img src="{% static 'img/empleado2.png' %}" alt="">
+            </div>
+            <li>Empleados</li>
+          </div>
+        </a>
+
+        <a href="{% url 'sucursales' %}">
+          <div class="contenedor-nav">
+            <div class="contenedor-img">
+              <img src="{% static 'img/sucursal2.png' %}" alt="">
+            </div>
+            <li>Sucursales</li>
+          </div>
+        </a>
+
+
+
+
+
+
+      </ul>
+    </nav>
+  </header>
     
 </body>
 </html>
