@@ -78,6 +78,8 @@ main{
 }
 .contenedor-img-2 {
     margin: 50px;
+    background-color: green;
+    padding: 10px;
 }
 .contenedor-img-2 img{
     padding: 20px; 
@@ -102,8 +104,8 @@ main{
 
 }
 .contenedor-txt p{
-    background-color: gray;
     margin: 10px;
+    padding: 10px;
 }
 
 
