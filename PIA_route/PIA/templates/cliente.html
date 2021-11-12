@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pia 5 Semestre web"/>
-    <link rel="shortcut icon" href="{% static 'img/icono.png' %}">
-    <meta name="copyright" content="MEXICAN SOFT" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    {% comment %} <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet"> {% endcomment %}
 
-    <link rel="stylesheet" href="{% static 'css/utilidad.css' %}">
-    <link rel="stylesheet" href="{% static 'css/cliente.css' %}">
-    <title>Cliente</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pia 5 Semestre web" />
+  <link rel="shortcut icon" href="{% static 'img/icono.png' %}">
+  <meta name="copyright" content="MEXICAN SOFT" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  {% comment %}
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet"> {% endcomment %}
+
+  <link rel="stylesheet" href="{% static 'css/utilidad.css' %}">
+  <link rel="stylesheet" href="{% static 'css/cliente.css' %}">
+  <title>Cliente</title>
 </head>
+
 <body>
 
-<div class="titulo">
+  <div class="titulo">
     <div class="header_nav">
       <div class="container">
-          <h1> <img src="{% static 'img/icono.png' %}" alt="">  MEXICAN SOFT <span>Clientes</span></h1> 
+        <h1> <img src="{% static 'img/icono.png' %}" alt=""> MEXICAN SOFT <span>Clientes</span></h1>
       </div>
     </div>
   </div>
@@ -44,7 +47,7 @@
             <li>Proyecto</li>
           </div>
         </a>
-        
+
 
         <a href="{% url 'empleado' %}">
           <div class="contenedor-nav">
@@ -74,12 +77,135 @@
   </header>
 
   <main>
-    <p>CLIENTE</p>
+    <h2 class="h2">NUESTROS MEJORES CLIENTES</h2>
+    <div class="contenedor-main">
+      <div class="main-izq">
+        <div class="contenedor">
+          <div class="contenedor-img-2">
+            <img src="{% static 'img/facpya.png' %}" alt="">
+          </div>
+          <div class="contenedor-txt">
+            <h1>FACPYA</h1>
+            <div class="over">
+              <p> Es nuestro cliente #1, le hemos desarrollado páginas web estáticas y juegos con javascript para sus estudiantes.</p>
+              <h3>Tecnologias Aplicadas:</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="main-der">
+        <div class="contenedor">
+          <div class="contenedor-img-2">
+            <img src="{% static 'img/cemex.png' %}" alt="">
+          </div>
+          <div class="contenedor-txt">
+            <h1>CEMEX</h1>
+            <div class="over">
+              <p>Con esta empresa hemos podido implementar aplicaciones web utilizando el framework con mas usado en estos tiempo de Python</p>
+              <h3>Tecnologias Aplicadas:</h3>
+              <ul>
+                <li>DjJANGO</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>SQLSERVER</li>
+              </ul>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contenedor-main">
+      <div class="main-izq">
+        <div class="contenedor">
+          <div class="contenedor-img-2">
+            <img src="{% static 'img/bimbo.png' %}" alt="">
+          </div>
+          <div class="contenedor-txt">
+            <h1>GRUPO BIMBO</h1>
+            <div class="over">
+              <p>Creamos una página web para que la empresa tenga una presentación y donde promocionar sus productos</p>
+              <h3>Tecnologias Aplicadas:</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+      
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="main-der">
+        <div class="contenedor">
+          <div class="contenedor-img-2">
+            <img src="{% static 'img/bbva.png' %}" alt="">
+          </div>
+          <div class="contenedor-txt">
+            <h1> BBVA</h1>
+            <div class="over">
+              <p>Hemos desarrollado aplicaciones de Escritorio unidas a bases de datos la cual hace diferentes servicios</p>
+
+              <h3>Tecnologias Aplicadas:</h3>
+              <ul>
+                <li>PYTHON</li>
+                <li>PYQT5</li>
+                <li>CSS</li>
+                <li>SQLSERVER</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="contenedor-main-2">
+      <div class="main-ambos">
+        <div class="contenedor">
+          <div class="contenedor-img-2">
+            <img src="{% static 'img/pemex.png' %}" alt="">
+          </div>
+          <div class="contenedor-txt">
+            <h1>PEMEX</h1>
+            <div class="over">
+              <p>Hemos desarrollado aplicaciones Web con el segundo framework mas conocido de Python  </p>
+
+              <h3>Tecnologias Aplicadas:</h3>
+              <ul>
+                <li>FLASK</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>SQLSERVER</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+     
+    </div>
+
+
+
   </main>
 
   <footer>
     <img src="{% static 'img/footer2.png' %}" alt="">
   </footer>
-    
+
 </body>
+
 </html>
